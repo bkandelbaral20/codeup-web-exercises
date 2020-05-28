@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Html Forms</title>
+</head>
+<body>
+
+<form method="post" action="https://request-inspector.glitch.me/">
+    <label for="name" >Enter your name: </label>
+    <input type="text" name="User" id="name"/>
+
+    <br/>
+
+    <label for="password" >Enter your password here: </label>
+    <input type="passowrd" name="character" id="password"/>
+    <br>
+
+    <label for="bodyText" >Please enter your bio here: </label>
+    <br>
+    <textarea name="bio" id="bodyText"> How was your day ? </textarea>
+    <br>
+
+    <input type="checkbox" name="addToEmailList" id="addToEmailList" value="true" checked > <label for="addToEmailList"> I would like to get an emails </label>
+    <br>
+
+    <h3>How did you hear about us?</h3>
+    <input type="radio" value="billboard" name="News" id="billboard"> <label for="billboard">Billboard</label>
+    <input type="radio" value="radio advertisement" name="News" id="rA"> <label for="rA">Learn to Code Workshop</label>
+    <input type="radio" value="Internet advertisement" name="News" id="iA"> <label for="iA">Learn to Code Workshop</label>
+    <input type="radio" value="Others" name="News" id="O"> <label for="O">Learn to Code Workshop</label>
+    <br>
+
+    <label for="dropdown"> Select your browser:</label>
+    <select name="dropdown" id="dropdown">
+        <option value="Opera">Opera</option>
+        <option value="netscape">Netscape Navigator</option>
+        <option value="aol" selected>America Online Browser</option>
+        <option value="safari">Safari</option>
+    </select>
+
+    <button type="submit">Submit your form</button>
+
+</form>
+</body>
+</html>

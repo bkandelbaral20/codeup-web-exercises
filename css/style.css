@@ -2,5 +2,35 @@
 .fancy-header {
     color: purple;
     text-decoration: underline;
+    text-align: center;
 }
 
+ h1,h2 {
+     color: darkslategrey;
+     text-decoration: underline;
+}
+ body {
+     background-color: bisque;
+     background-image:url("../img/pic.jpg");
+     font-family: "Apple Braille" ;
+ }
+
+ li {
+     list-style: upper-alpha;
+ }
+
+td, tr {
+    padding-top: 5px;
+    font-size: 12px;
+}
+
+ a.link {
+     color: cornflowerblue;
+ }
+
+ a.visited {
+     color: purple;
+ }
+  a.hover {
+      color: black;
+  }

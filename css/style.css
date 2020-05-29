@@ -1,7 +1,6 @@
 /* Style for the h1*/
-h1{
-    color: red;
+.fancy-header {
+    color: purple;
+    text-decoration: underline;
 }
-.fancy-heading {
-    color: #b3ff00;
-}
+

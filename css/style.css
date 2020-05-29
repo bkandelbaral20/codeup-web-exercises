@@ -1,17 +1,7 @@
-/* Style fo rthe header and the span */
+/* Style for the h1*/
 h1{
-    color: antiquewhite;
-    text-decoration: aliceblue;
-    background-color:yellowgreen;
+    color: red;
 }
 .fancy-heading {
     color: #b3ff00;
 }
-span {
-    font-weight: bolder;
-    color: indianred;
-}
- /*
-
-
-  */

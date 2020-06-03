@@ -4,11 +4,16 @@
     text-decoration: underline;
     text-align: center;
 }
+p {
+    font-weight: bolder;
+    text-align: center;
+}
 
  h1,h2 {
      color: darkslategrey;
      text-decoration: underline;
 }
+
  body {
      background-color: bisque;
      background-image:url("../img/pic.jpg");
@@ -17,20 +22,26 @@
 
  li {
      list-style: upper-alpha;
+     font-weight: bold;
+
  }
 
-td, tr {
-    padding-top: 5px;
-    font-size: 12px;
+td, tr,th {
+    border: 1px solid black;
+    font-size: 18px;
+    font-weight: bolder;
 }
-
- a.link {
+table {
+    border-collapse: collapse;
+    width: 100px;
+}
+ a:link {
      color: cornflowerblue;
  }
 
- a.visited {
+ a:visited {
      color: purple;
  }
-  a.hover {
+  a:hover {
       color: black;
   }

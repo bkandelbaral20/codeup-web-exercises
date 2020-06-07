@@ -1,0 +1,56 @@
+.a {
+    box-sizing: border-box;
+    height:0em;
+    flex-direction: column;
+    display:inline-flex;
+}
+
+ nav a:hover {
+    color: blue;
+}
+
+ nav a {
+    justify-content: space-around;
+    margin: auto;
+    text-decoration: none;
+    color: black;
+
+
+}
+nav :nth-child(5){
+    display: flex;
+ justify-content: center;
+    font-size: 3em;
+    padding-bottom:.2em;
+    padding-top: .2em;
+    height: 0.2em;
+}
+
+nav ul li:nth-child(6){
+  display: flex;
+   margin: auto;
+    position: absolute;
+    justify-content:right;
+}
+
+ul {
+    list-style: none;
+}
+
+body{
+    margin:0;
+    box-sizing: border-box;
+}
+
+nav li {
+    margin: .5em;
+}
+
+nav {
+    background-color: #848487;
+}
+.icons {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}

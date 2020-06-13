@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -9,10 +10,14 @@
     <title>Order pizza</title>
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+
 </head>
+
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#"> Pizza world</a>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -33,20 +38,23 @@
                 <input class="form-control mr-sm font-weight-bold " type="search" placeholder="Search store near you " aria-label="Search">
             </form>
             </li>
-
         </ul>
+
         <i class="fas fa-user-plus"> </i>
         <a class="nav-link btn" href="#">Sign Up</a>
+
     </div>
     </nav>
 <hr>
+
     <div class="jumbotron ">
         <h1 class="text-center text-jumbotron"> Welcome to pizza world </h1>
     </div>
 
       <h2 class="text font-weight-bold"> Build your own pizza! </h2>
 
-<!-- this section is for tap option-->
+    <!-- this section is for tap option to make the pizza-->
+
     <ul class="nav nav-tabs">
     <li class="nav-item ">
         <a class="nav-link active" href="#"><span class="badge badge-pill badge-primary">1</span> Size and Crust</a>
@@ -63,7 +71,7 @@
 <button type="button" class="btn btn-primary btn-lg btn-block "> Choose size and crust </button>
 <hr>
 
-<div class="card" style="width: 90rem;">
+<div class="card" style="width: 100%;">
     <div class="card-header">
         Hand Tossed
     </div>
@@ -80,7 +88,7 @@
 </div>
 <hr>
 
-<div class="card1" style="width: 80rem; "  >
+<div class="card1" style="width: 100%; "  >
     <div class="card-header">
         Crispy Thin
     </div>
@@ -114,20 +122,74 @@
 
 <button type="button" class="btn btn-primary btn-lg btn-block "> Choose cheese and sauce </button>
 <hr>
+<div class="card" style="width: 100%;">
+    <div class="card-header">
+        Cheese
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">How much?</li>
+        <div class="input-group">
+            <input type="text" class="form-control" aria-label="Text input with dropdown button">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown">Regular</button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Light</a>
+                    <a class="dropdown-item" href="#">Normal</a>
+                    <a class="dropdown-item" href="#">Extra</a>
+                    <a class="dropdown-item" href="#">Double</a>
+                </div>
+                <hr>
+        </div>
 
+<hr>
+            <div class="card" style="width: 100%;">
+                <div class="card-header">
+                    Sauce
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">What Type?</li>
+                    <div class="input-group">
+                        <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown">Robust Inspired Tomato Sauce </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Tomato</a>
+                                <a class="dropdown-item" href="#">Marinara</a>
+                                <a class="dropdown-item" href="#">BBQ</a>
+                                <a class="dropdown-item" href="#">Alfredo</a>
+                             </div>
+                        </div>
+                    </div>
 
+                    <li class="list-group-item">How much?</li>
+                    <div class="input-group">
+                     <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                      <div class="input-group-append">
+                      <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown">Regular </button>
+                        <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Light</a>
+                                <a class="dropdown-item" href="#">Normal</a>
+                                <a class="dropdown-item" href="#">Extra</a>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+                <hr>
+            </div>
 
 <!--This is for my third panel option-->
-<hr>
+
 <ul class="nav nav-tabs">
+
     <li class="nav-item ">
         <a class="nav-link " href="#"><span class="badge badge-pill badge-primary">1 </span> Size and Crust</a>
     </li>
+
     <li class="nav-item">
         <a class="nav-link " href="#"><span class="badge badge-pill badge-primary">2 </span> Cheese and Sauce</a>
     </li>
-    <li class="nav-item">
-        <a class="nav-link active " href="#"><span class="badge badge-pill badge-primary">3 </span> Toppings</a>
+
+    <li class="nav-item"><a class="nav-link active " href="#"><span class="badge badge-pill badge-primary">3 </span> Toppings</a>
     </li>
 </ul>
 
@@ -156,7 +218,7 @@
         <li class="list-group-item"><input type="checkbox"> Jalepe&ntilde;o Peppers</li>
     </ul>
 </div>
-<button type="button" class="btn btn-primary btn-lg">Checkout<i class="fas fa-cart-plus"></i> </button>
+<button type="button" class="btn btn-primary btn-lg ">Checkout<i class="fas fa-cart-plus"></i> </button>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

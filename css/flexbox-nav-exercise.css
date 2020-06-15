@@ -1,16 +1,31 @@
-link{
-    display: flex;
+* {
+    box-sizing: border-box;
 }
-a:hover{
-    color: blue;
+body {
+    margin: 0;
 }
-
 nav {
-    //color: #848487;
-    text-decoration: none;
-    padding: .2em .2em;
-    background-color: #848487;
-    margin: auto;
+    background: #333333;
 }
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
 
 
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 1em;
+}
+nav a:hover {
+    background: black;
+}
+nav ul li:nth-child(4) {
+    margin-right: auto;
+
+
+}

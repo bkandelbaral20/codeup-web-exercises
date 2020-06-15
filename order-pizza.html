@@ -6,7 +6,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Order pizza</title>
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
@@ -15,28 +16,30 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#"> Pizza world</a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent1">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" >
-                  Order Online
+                <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
+                    Order Online
                 </button>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Menu</a>
             </li>
             <li>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Zip Code" aria-label="Search">
-                <input class="form-control mr-sm font-weight-bold " type="search" placeholder="Search store near you " aria-label="Search">
-            </form>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Zip Code" aria-label="Search">
+                    <input class="form-control mr-sm font-weight-bold " type="search"
+                           placeholder="Search store near you " aria-label="Search">
+                </form>
             </li>
         </ul>
 
@@ -44,185 +47,222 @@
         <a class="nav-link btn" href="#">Sign Up</a>
 
     </div>
-    </nav>
-<hr>
+</nav>
 
-    <div class="jumbotron ">
-        <h1 class="text-center text-jumbotron"> Welcome to pizza world </h1>
+<div class="container">
+    <div class="jumbotron jumbotron-fluid my-4">
+        <div class="container p-0 w-100">
+            <h1 class="display-4 d-flex justify-content-center m-0">Welcome to Pizza World!</h1>
+        </div>
     </div>
 
-      <h2 class="text font-weight-bold"> Build your own pizza! </h2>
+    <h2 class="text font-weight-bold"> Build your own pizza! </h2>
 
     <!-- this section is for tap option to make the pizza-->
 
     <ul class="nav nav-tabs">
-    <li class="nav-item ">
-        <a class="nav-link active" href="#"><span class="badge badge-pill badge-primary">1</span> Size and Crust</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#"><span class="badge badge-pill badge-primary">2</span> Cheese and Sauce</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#"><span class="badge badge-pill badge-primary">3</span> Toppings</a>
-    </li>
+        <li class="nav-item ">
+            <a class="nav-link active" href="#"><span class="badge badge-pill badge-primary">1</span> Size and Crust</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><span class="badge badge-pill badge-primary">2</span> Cheese and Sauce</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><span class="badge badge-pill badge-primary">3</span> Toppings</a>
+        </li>
     </ul>
 
-<!--This is for the selection -->
-<button type="button" class="btn btn-primary btn-lg btn-block "> Choose size and crust </button>
-<hr>
+    <!--This is for the selection -->
+    <button type="button" class="btn btn-primary btn-lg btn-block "> Choose size and crust</button>
 
-<div class="card" style="width: 100%;">
-    <div class="card-header">
-        Hand Tossed
-    </div>
-    <ul class="list-group list-group-flush mr-sm-2 ">
-        <li class="list-group-item"> Garlic seasoned crust with a rich, buttery tost </li>
 
-<!--        making class for radio button-->
-        <div class="form-check list-group-item"><input type="radio"> Small(10")
+    <div class="card" style="width: 100%;">
+        <div class="card-header">
+            Hand Tossed
         </div>
+        <ul class="list-group list-group-flush mr-sm-2 ">
+            <li class="list-group-item"> Garlic seasoned crust with a rich, buttery tost</li>
 
-        <div class="form-check list-group-item"><input type="radio"> Medium(12")
-        </div>
-    </ul>
-</div>
-<hr>
-
-<div class="card1" style="width: 100%; "  >
-    <div class="card-header">
-        Crispy Thin
-    </div>
-    <ul class="list-group list-group-flush1">
-        <li class="list-group-item"> Thin enough for optimum crispy to crunchy</li>
-
-<!--        This is for 2nd radio button -->
-        <li class="form-check2 list-group-item"><input type="radio"> Medium(12")</li>
-
-        <li class="form-check2 list-group-item"><input type="radio"> Large(14")</li>
-    </ul>
-</div>
-
-<hr>
-    <button type="button" class="btn btn-primary btn-lg"> Next Steps> </button>
-<hr>
-
-<!--This is for the second panel options  -->
-
-<ul class="nav nav-tabs">
-    <li class="nav-item ">
-        <a class="nav-link " href="#"><span class="badge badge-pill badge-primary">1</span> Size and Crust</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link active " href="#"><span class="badge badge-pill badge-primary">2</span> Cheese and Sauce</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#"><span class="badge badge-pill badge-primary">3</span> Toppings</a>
-    </li>
-</ul>
-
-<button type="button" class="btn btn-primary btn-lg btn-block "> Choose cheese and sauce </button>
-<hr>
-<div class="card" style="width: 100%;">
-    <div class="card-header">
-        Cheese
-    </div>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">How much?</li>
-        <div class="input-group">
-            <input type="text" class="form-control" aria-label="Text input with dropdown button">
-            <div class="input-group-append">
-                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown">Regular</button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Light</a>
-                    <a class="dropdown-item" href="#">Normal</a>
-                    <a class="dropdown-item" href="#">Extra</a>
-                    <a class="dropdown-item" href="#">Double</a>
-                </div>
-                <hr>
-        </div>
-
-<hr>
-            <div class="card" style="width: 100%;">
-                <div class="card-header">
-                    Sauce
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">What Type?</li>
-                    <div class="input-group">
-                        <input type="text" class="form-control" aria-label="Text input with dropdown button">
-                        <div class="input-group-append">
-                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown">Robust Inspired Tomato Sauce </button>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Tomato</a>
-                                <a class="dropdown-item" href="#">Marinara</a>
-                                <a class="dropdown-item" href="#">BBQ</a>
-                                <a class="dropdown-item" href="#">Alfredo</a>
-                             </div>
-                        </div>
-                    </div>
-
-                    <li class="list-group-item">How much?</li>
-                    <div class="input-group">
-                     <input type="text" class="form-control" aria-label="Text input with dropdown button">
-                      <div class="input-group-append">
-                      <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown">Regular </button>
-                        <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Light</a>
-                                <a class="dropdown-item" href="#">Normal</a>
-                                <a class="dropdown-item" href="#">Extra</a>
-                            </div>
-                        </div>
-                    </div>
-                </ul>
-                <hr>
+            <!--        making class for radio button-->
+            <div class="form-check list-group-item"><input type="radio"> Small(10")
             </div>
 
-<!--This is for my third panel option-->
-
-<ul class="nav nav-tabs">
-
-    <li class="nav-item ">
-        <a class="nav-link " href="#"><span class="badge badge-pill badge-primary">1 </span> Size and Crust</a>
-    </li>
-
-    <li class="nav-item">
-        <a class="nav-link " href="#"><span class="badge badge-pill badge-primary">2 </span> Cheese and Sauce</a>
-    </li>
-
-    <li class="nav-item"><a class="nav-link active " href="#"><span class="badge badge-pill badge-primary">3 </span> Toppings</a>
-    </li>
-</ul>
-
-<button type="button" class="btn btn-primary btn-lg btn-block "> Choose  topping </button>
-
-<div class="card" style="width: 90rem;">
-    <div class="card-header">
-        Choose Meat
+            <div class="form-check list-group-item"><input type="radio"> Medium(12")
+            </div>
+        </ul>
     </div>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item"><input type="checkbox"> Beef</li>
-        <li class="list-group-item"><input type="checkbox"> Ham</li>
-        <li class="list-group-item"><input type="checkbox"> Philly Steak</li>
-        <li class="list-group-item"><input type="checkbox"> Bacon</li>
+
+
+    <div class="card1" style="width: 100%; ">
+        <div class="card-header">
+            Crispy Thin
+        </div>
+        <ul class="list-group list-group-flush1">
+            <li class="list-group-item"> Thin enough for optimum crispy to crunchy</li>
+
+            <!--        This is for 2nd radio button -->
+            <li class="form-check2 list-group-item"><input type="radio"> Medium(12")</li>
+
+            <li class="form-check2 list-group-item"><input type="radio"> Large(14")</li>
+        </ul>
+    </div>
+
+    <div class="card-footer bg-light d-flex justify-content-end">
+        <div class="text-right">
+            <a href="#" class="btn btn-primary">Next step ></a>
+        </div>
+    </div>
+    <hr>
+
+    <!--This is for the second panel options  -->
+
+    <ul class="nav nav-tabs">
+        <li class="nav-item ">
+            <a class="nav-link " href="#"><span class="badge badge-pill badge-primary">1</span> Size and Crust</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active " href="#"><span class="badge badge-pill badge-primary">2</span> Cheese and Sauce</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><span class="badge badge-pill badge-primary">3</span> Toppings</a>
+        </li>
     </ul>
-</div>
+
+    <button type="button" class="btn btn-primary btn-lg btn-block "> Choose cheese and sauce</button>
+
+    <div class="card" style="width: 100%;">
+        <div class="card-header">
+            Cheese
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">How much?</li>
+            <div class="input-group">
+                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown">
+                        Regular
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Light</a>
+                        <a class="dropdown-item" href="#">Normal</a>
+                        <a class="dropdown-item" href="#">Extra</a>
+                        <a class="dropdown-item" href="#">Double</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </ul>
+                <div class="card" style="width: 100%;">
+                    <div class="card-header">
+                        Sauce
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">What Type?</li>
+                        <div class="input-group">
+                            <input type="text" class="form-control">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                        data-toggle="dropdown">Robust Inspired Tomato Sauce
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Tomato</a>
+                                    <a class="dropdown-item" href="#">Marinara</a>
+                                    <a class="dropdown-item" href="#">BBQ</a>
+                                    <a class="dropdown-item" href="#">Alfredo</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <li class="list-group-item">How much?</li>
+                        <div class="input-group">
+                            <input type="text" class="form-control">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                        data-toggle="dropdown">Regular
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Light</a>
+                                    <a class="dropdown-item" href="#">Normal</a>
+                                    <a class="dropdown-item" href="#">Extra</a>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    <div class="card-footer bg-light" >
+                        <div class="btn-group d-flex justify-content-end" role="group" aria-label="steps">
+                            <a href="">
+                                <button type="button" class="btn btn-primary">< Previous Step ></button>
+                            </a>
+                            <a href="">
+                                <button type="button" class="btn btn-primary"> < Next Step ></button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 <hr>
+                <!--This is for my third panel option-->
 
-<div class="card2" style="width: 90rem;">
-    <div class="card-header">
-        Choose Non-Meats </div>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item"><input type="checkbox"> Green Peppers</li>
-        <li class="list-group-item"><input type="checkbox"> Mushrooms</li>
-        <li class="list-group-item"><input type="checkbox"> Onions</li>
-        <li class="list-group-item"><input type="checkbox"> Jalepe&ntilde;o Peppers</li>
-    </ul>
-</div>
-<button type="button" class="btn btn-primary btn-lg ">Checkout<i class="fas fa-cart-plus"></i> </button>
+                <ul class="nav nav-tabs">
+
+                    <li class="nav-item ">
+                        <a class="nav-link " href="#"><span class="badge badge-pill badge-primary">1 </span> Size and
+                            Crust</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="#"><span class="badge badge-pill badge-primary">2 </span> Cheese and
+                            Sauce</a>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link active " href="#"><span
+                            class="badge badge-pill badge-primary">3 </span> Toppings</a>
+                    </li>
+                </ul>
+
+                <button type="button" class="btn btn-primary btn-lg btn-block "> Choose topping</button>
+
+                <div class="card" style="width: 100%;">
+                    <div class="card-header">
+                        Choose Meat
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><input type="checkbox"> Beef</li>
+                        <li class="list-group-item"><input type="checkbox"> Ham</li>
+                        <li class="list-group-item"><input type="checkbox"> Philly Steak</li>
+                        <li class="list-group-item"><input type="checkbox"> Bacon</li>
+                    </ul>
+                </div>
 
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+                <div class="card2" style="width: 100%;">
+                    <div class="card-header">
+                        Choose Non-Meats
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><input type="checkbox"> Green Peppers</li>
+                        <li class="list-group-item"><input type="checkbox"> Mushrooms</li>
+                        <li class="list-group-item"><input type="checkbox"> Onions</li>
+                        <li class="list-group-item"><input type="checkbox"> Jalepe&ntilde;o Peppers</li>
+                    </ul>
+                </div>
+
+                <div class="card-footer bg-light d-flex justify-content-end ">
+                    <div class="text-right">
+                        <a href="#" class="btn btn-primary">Checkout <i class="fas fa-cart-plus"></i></a>
+                    </div>
+                </div>
+        </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
 </body>
 </html>

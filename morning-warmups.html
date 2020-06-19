@@ -143,6 +143,30 @@ for (var i = 1; i <= 20; i++) {
     }
 }
 
+// Write a function that takes 2 parameters. Starting at the first and counting by the second, will output 5 steps. I.e. countFromBy(10,5) results in:
+// 10
+// 15
+// 20
+// 25
+// 30
+
+    const countNumberByFive = function(num1, num2){
+        console.log(num1);
+        console.log(num1+ num2);
+        console.log(num1+ 2 * num2);
+        console.log(num1+ 3 * num2);
+        console.log(num1+ 4 * num2);
+        // another way
+        // console.log(num1);
+        // num1 += num2;
+        // console.log(num1);
+        // num1 += num2;
+        // console.log(num1);
+        // num1 += num2;
+        // console.log(num1);
+        // num1 += num2;
+    }
+  console.log(countNumberByFive(2,2));
 </script>
 
 </body>

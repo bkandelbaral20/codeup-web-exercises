@@ -167,6 +167,37 @@ for (var i = 1; i <= 20; i++) {
         // num1 += num2;
     }
   console.log(countNumberByFive(2,2));
+//
+let luckyNumber = parseFloat(prompt("What is your lucky number 1-8 ?"));
+    function magic8Balls (luckyNumber) {
+        switch (luckyNumber){
+            case 1:
+                return "AS i see it yes";
+
+            case 2:
+                return "Ask again later";
+
+            case 3:
+                return "Better not tell you now";
+
+            case 4:
+                return "Cannot predict now";
+
+            case  5:
+                return "Concentrate and ask questions";
+
+            case 6:
+                return "Donot count on it";
+
+            case  7:
+                return "Outlook not so good";
+
+            case  8:
+                return "Outlook is good";
+
+        }
+    }
+  alert(magic8Balls(luckyNumber));
 </script>
 
 </body>

@@ -21,13 +21,14 @@ console.log("hello from conditionals lec.js!");
     var isAdmin = false;
 
     if(isAdmin){
-
+console.log("Show a specific nav-bar");
     }
 
 //TODO Together: Send a 20% off coupon if its users birthday
-    var birthday = true;
+
+    var birthday;
     if(birthday){
-        //send 20% off coupon
+        console.log("send 20% off coupon");
     }
 
 //TODO Together: Write an if statement that alerts "It's raining" if isRainy is true
@@ -37,7 +38,7 @@ console.log("hello from conditionals lec.js!");
     }
 
 //TODO Together: Write an if statement that alerts the user whether or not they have enough money to buy a new item. Assume there are no hidden fees or taxes.
-    var itemCost = 300;
+    var itemCost = 100;
     var currentBalance = 200;
 
     if (itemCost > currentBalance){
@@ -211,7 +212,7 @@ if (age < 15){
     alert("You are not eligible for a license because you do not have permit");
 
     } else {
-        alert("You are eligible fora learner permit");
+        alert("You are eligible for a learner permit");
     }
 }
 

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Morning Warmups</title>
+    <title>Morning Warm-ups</title>
 </head>
 <body>
 <script>
@@ -63,7 +63,7 @@ console.log(lengthOfString("Binju"));
 
 //Write a JavaScript function that returns the square root of the number passed through it.
 
-function squareRootOfNumber(x) {
+    function squareRootOfNumber(x) {
     return Math.sqrt(x);
 }
 
@@ -86,7 +86,7 @@ console.log(typeOfInput("Binjita"));
 
 //Write a JavaScript function that returns the boolean true if a number passed through it is even.
 function isEven(num) {
-    return (num % 2 === 0)
+    return (num % 2 === 0);
 }
 
 console.log(isEven(8));
@@ -96,7 +96,7 @@ console.log(isEven(9));
     //let evenNumber = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24];
 
     function printTenEvenNumber (num){
-        return num % 2 ===0;
+        return num % 2 === 0;
 
     }
     console.log("2 ,4,6,8,10,12,14,16,18,20 ");
@@ -187,7 +187,7 @@ let luckyNumber = parseFloat(prompt("What is your lucky number 1-8 ?"));
                 return "Concentrate and ask questions";
 
             case 6:
-                return "Donot count on it";
+                return "Do not count on it";
 
             case  7:
                 return "Outlook not so good";
@@ -198,6 +198,20 @@ let luckyNumber = parseFloat(prompt("What is your lucky number 1-8 ?"));
         }
     }
   alert(magic8Balls(luckyNumber));
+    //
+
+    let lights = "on";
+    let lightSwitch =  function () {
+        if( lights === "on" ){
+            lights = "off";
+        }else {
+            lights ="on";
+        }
+    }
+    console.log("lights are " + lights);
+    lightSwitch();
+    console.log("lights are now " + lights);
+
 </script>
 
 </body>

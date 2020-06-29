@@ -29,7 +29,8 @@ function analyzeColor(colors) {
     }
    else if(colors === "cyan"){
    return ("I do not know about cyan");
-       } else {
+       }
+   else {
         return ("I have no idea about " + colors + " color");
     }
 }

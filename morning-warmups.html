@@ -222,13 +222,16 @@ let luckyNumber = parseFloat(prompt("What is your lucky number 1-8 ?"));
     //2 is even
     //3 ...
 
-    for(let i=0; i<=10 ; i++){
+let countTo10 = function () {
+    for (let i=1; i<=10 ; i++){
         if(i%2===0){
             console.log(i + " is even number");
         }else {
             console.log(i+ " is odd number");
         }
     }
+}
+countTo10();
 
 </script>
 

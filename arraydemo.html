@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>array</title>
+</head>
+<body>
+<script>
+//creating an array variable
+    let values = ["cars", "keys", 18,[2,4]];
+    //printing it out
+    console.log(values);
+    //printing out the length(total element)
+    console.log(values.length);
+
+ //assigning the new variable named fruits and displaying it indexes with values
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    for(var i= 0; i < fruits.length; i++){
+    console.log("The fruits at " + i + " is " + fruits [i]);
+}
+//using for each loop
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.forEach(function(fruits, index){
+    console.log("For-each : The fruits at is " + fruits + " and has the index " + index);
+    console.log("For-each: " + fruits);
+});
+
+</script>
+</body>
+</html>

@@ -12,7 +12,7 @@ function showMultiplicationTable (x){
 
 //3
     for (let i = 1; i< 10; i++) {
-        let y= Math.floor((Math.random()*180)+20);
+        let y= Math.floor((Math.random()*181)+20);
         console.log(y);
         if (y % 2 === 0 ){
             console.log(y+ " is even number");

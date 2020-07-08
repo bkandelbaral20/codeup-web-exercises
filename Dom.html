@@ -5,9 +5,9 @@
     <title>Dom</title>
 </head>
 <body>
-<h1 id="demo"></h1>
+<div id="demo"></div>
 <ul></ul>
-<p id="demo1">P1 A hello </p>
+<div id="demo1">P1 A hello </div>
 <p id="demoText">P2 A</p>
 <p class="b">P3 B</p>
 <p class="b">P4 B</p>
@@ -91,6 +91,16 @@
         var dataAttr = demo2.getAttribute("data-dbfield");
         console.log("the data attribute is :" + dataAttr);
     })();
+
+    // using styles
+(function (){
+     var div1 = document.getElementById("demo1");
+     div2.style["background-color"]= "red";
+
+    var div = document.getElementById("demo2");
+    div[1].style["background-color"]= "blue";
+
+})();
 
 </script>
 </body>

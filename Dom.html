@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dom</title>
+</head>
+<body>
+<h1 id="demo"></h1>
+<ul></ul>
+<p id="demo1">P1 A hello </p>
+<p id="demoText">P2 A</p>
+<p class="b">P3 B</p>
+<p class="b">P4 B</p>
+<p id="demo2 " data-dbfield="field-seven"></p>
+
+<form name="login">
+    <div>
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text" value="Binjita ">
+    </div>
+
+    <div>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="text" value="werifhf ">
+    </div>
+    <button type="button" name="Click me">Click me</button>
+
+</form>
+</body>
+<script>
+"use strict";
+
+//using id
+    (function () {
+        var tag = document.getElementById("demo1");
+        tag.innerHTML = "Hyperion Rocks !";
+    })();
+
+    //using class name
+    (function () {
+        var paragraph = document.getElementsByClassName("a");
+
+        //print all element
+        for (var i = 0; i<paragraph.length;i++){
+            console.log(paragraph[i].innerHTML);
+        }
+
+// using element tagName
+    (function () {
+    var paragraph1 = document.getElementsByTagName("p");
+
+
+//print all element
+      for (var i = 0; i<paragraph1.length;i++){
+           console.log(paragraph1[i].innerHTML);
+        }
+
+//Using forms
+
+        (function (){
+            var form= document.forms.login.username;
+            console.log(userInput.value);
+        })();
+
+    })();
+    })();
+
+// using innerHTml
+    (function () {
+    var mainsection = document.getElementById("demo");
+        mainsection.innerText ="<b> Hello Hyperion!</b>"
+
+   var mainsection1 = document.getElementById("demoText");
+        mainsection1.innerText ="<b> Hello !</b>"
+
+    }());
+
+ //MINI LAB
+//Create an <p> tag with the id='demo'
+//Change the font-size to 6rem;'
+//Create a <p> tag with the id='demo2' and a data-* attribute
+//Log the attribute to the console log or alert it.
+
+    (function (){
+        // get the demo1 element
+   var demo1 = document.getElementById("demo1");
+   demo1.setAttribute("style", "font-size:6rem");
+
+   //post the data-* attribute
+        var demo2 = document.getElementById("demo2");
+        var dataAttr = demo2.getAttribute("data-dbfield");
+        console.log("the data attribute is :" + dataAttr);
+    })();
+
+</script>
+</body>
+</html>

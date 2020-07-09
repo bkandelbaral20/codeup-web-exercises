@@ -41,49 +41,47 @@
         }
         document.getElementById("btn1").addEventListener("click", button1);
 
-        // add click  event listener to rest of the button
-        var btn2 = document.getElementById('btn2');
-        btn2.addEventListener('click', button1);
 
-        // add event listener to btn1
-        var btn3 = document.getElementById('btn3');
-        btn3.addEventListener('click', button1);
 
-        // add event listener to btn1
-        var btn4 = document.getElementById('btn4');
-        btn4.addEventListener('click', button1);
+        document.getElementById("btn2").addEventListener("click", button1)
+        {
+            // TODO: Uncomment the next line and get the sub header element by id
+            var subHeader = document.getElementById("sub-header");
 
-        // TODO: Uncomment the next line and get the sub header element by id
-        var subHeader = document.getElementById("sub-header");
-
-        // TODO: Set the text color of subHeader to blue
-        subHeader.style.color = 'blue';
-
-        // TODO: Uncomment the next line and get all list items
-         var listItems = document.getElementsByTagName("li") ;
-
-        // TODO: Set text color on every other list item to grey
-        // TODO: Set text color of li with dbid = 1 to blue
-
-        for(var i = 0; i < listItems.length; i++){
-        if((i+1)%2 === 0){
-        listItems[i].style.color = "grey";
+            // TODO: Set the text color of subHeader to blue
+            subHeader.style.color = 'blue';
         }
 
-        if(listItems[i].hasAttribute("data-dbid")){
-            if (listItems[i].getAttribute("data-dbid") === "1"){
-                listItems[i].style.color = "blue";
+        document.querySelector("btn3").addEventListener("click", button1)
+        {
+            // TODO: Uncomment the next line and get all list items
+            var listItems = document.getElementsByTagName("li");
+
+            // TODO: Set text color on every other list item to grey
+            // TODO: Set text color of li with dbid = 1 to blue
+
+            for (var i = 0; i < listItems.length; i++) {
+                if ((i + 1) % 2 === 0) {
+                    listItems[i].style.color = "grey";
+                }
+
+                if (listItems[i].hasAttribute("data-dbid")) {
+                    if (listItems[i].getAttribute("data-dbid") === "1") {
+                        listItems[i].style.color = "blue";
+                    }
+                }
             }
         }
-         }
 
-        // TODO: Uncomment the next line and get all elements with class name sub-paragraph
-        var subParagraphs = document.getElementsByClassName("sub-paragraph");
+        document.getElementById("btn4").addEventListener("click", "button1")
+        {
+            // TODO: Uncomment the next line and get all elements with class name sub-paragraph
+            var subParagraphs = document.getElementsByClassName("sub-paragraph");
 
-        // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
-        subParagraphs[0].innerHTML = "Mission Accomplished !";
+            // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
+            subParagraphs[0].innerHTML = "Mission Accomplished !";
 
-
+        }
     })();
 </script>
 </body>

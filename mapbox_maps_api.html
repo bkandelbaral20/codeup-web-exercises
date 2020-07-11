@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Mapbox Map API </title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+
+    <!-- Mapbox CSS -->
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- Custom CSS -->
+    <style>
+        *{ margin: 0; padding: 0; }
+        #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+
+        h3{
+            max-width: 400px;
+            font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<h1>My First Mapbox Map!</h1>
+
+<!-- The HTML element that serves as the Mapbox container -->
+<div id='map'> </div>
+
+<!-- Mapbox JS -->
+
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+<script src="js/keys.js"></script>
+<script src="js/mapbox-geocoder-utils.js"></script>
+<!-- Custom JS -->
+<script>
+
+    //Creating main map for San Antonio, Texas
+    mapboxgl.accessToken = mapboxKey;
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v9',
+        zoom: 10,
+        center: [-98.4916, 29.4252]
+    });
+
+    //using array object to shows the information of restaurant
+    const favRestaurants = [
+        {
+            restaurantName: " <strong> BIG POPPAS TACO! </strong>",
+            location: "SAN ANTONIO, TX",
+            description:"<em>Best taco place</em>",
+            address: "2118 N PanAm Expy, San Antonio, TX 78208"
+        },
+        {
+            restaurantName: "<strong> DOUGH PIZZERIA NAPOLETANA</strong>",
+            location: "SAN ANTONIO, TX ",
+            description:"<em>Super tasty pizza place </em>",
+            address:"518 S ALAMO ST, SAN ANTONIO, TX 78204"
+        },
+        {
+            restaurantName: " <strong> CHEESE CAKE FACTORY </strong>",
+            location: "SAN ANTONIO, TX ",
+            description:"<em>Almond-crusted Salmon Salad is my favourite here</em>",
+            address:"15900 La Cantera Pkwy, San Antonio, TX 78256"
+        },
+    ]
+
+    favRestaurants.forEach(function(restaurant) {
+        geocode( restaurant.address, mapboxKey).then(function(data) {
+            console.log(data);
+            var marker1= new mapboxgl.Marker()
+                .setLngLat(data)
+                .addTo(map);
+
+            var Popup = new mapboxgl.Popup()
+                .setLngLat(data)
+                .setHTML(restaurant.restaurantName + "<br>" +restaurant.location + "<br>" + restaurant.description )
+                .addTo(map);
+
+            marker1.setPopup(Popup);
+        });
+    });
+
+</script>
+</body>
+</html>

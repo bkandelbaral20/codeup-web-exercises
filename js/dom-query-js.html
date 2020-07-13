@@ -32,6 +32,7 @@
 <script>
     (function() {
         "use strict";
+        document.getElementById("btn1").addEventListener("click", button1);
         // TODO: Uncomment next line and get the main header element by id
         var mainHeader = document.getElementById("main-header");
 
@@ -39,18 +40,18 @@
         function button1 (){
             mainHeader.innerHTML = "JavaScript is Cool";
         }
-        document.getElementById("btn1").addEventListener("click", button1);
 
 
-
-        document.getElementById("btn2").addEventListener("click", button1)
         {
-            // TODO: Uncomment the next line and get the sub header element by id
-            var subHeader = document.getElementById("sub-header");
+            document.getElementById("btn2").addEventListener("click", button1);
+                // TODO: Uncomment the next line and get the sub header element by id
+                var subHeader = document.getElementById("sub-header");
 
-            // TODO: Set the text color of subHeader to blue
-            subHeader.style.color = 'blue';
+                // TODO: Set the text color of subHeader to blue
+                subHeader.style.color = 'blue';
+
         }
+        //document.getElementById("btn2").addEventListener("click", button1)
 
         document.querySelector("btn3").addEventListener("click", button1)
         {

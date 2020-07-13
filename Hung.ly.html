@@ -7,13 +7,17 @@
 <body>
 <script>
 //TODO: Write a function that loops through a string. For each character in the string that is a vowel (aeiou/AEIOU), add it to an array and return the array
-function loopsString (str){
-    var arr = [];
-    var myVowels = "aeiou";
-
-
-
-}
+// function loopsString (str){
+//     var arr = [];
+//     var myVowels = "aeiouAEIOU";
+//     for (var i = 0; i < str.length; i++) {
+//         if (myVowels.includes.indexOf(str[i].toLowerCase())) {
+//           arr.push.str[i];
+//         }
+//     }
+//     return arr;
+// }
+// console.log(loopsString ("Binjita"));
 
 //TODO: Write a function that checks if someone is 21 or older. If they are over 21, return true. Otherwise return false.
 
@@ -25,9 +29,22 @@ function someoneAge(yrs){
 console.log(someoneAge(20));
 
 //TODO: Write a function that will set an interval that counts down from 10 at 1second intervals. Every count should be logged to the console. If the count reaches zero, then return an alert that says 'lift off!'
-function setInterval (num){
 
-}
+    var max = 1;
+    var count = 11;
+    var interval  = 1000;//milisecond
+
+    var intervalID = setInterval(function(){
+        if(count <= max){
+            clearInterval(intervalID);
+            console.log("lift off!");
+        } else {
+            count --;
+            console.log("repeating this line " + count);
+        }
+    },interval);
+
+
 //TODO: Given the following array of objects, write a function that takes in the array and return the object that costs the most money.
 var storeItems = [
 {
@@ -48,11 +65,17 @@ price: 140.99
 }
 ];
 
-    function costMoney(num){
-        for(var i=0; i<storeItems.price; i++) {
-            console.log("The total cost is :" + storeItems.price[i]);
-        }
+function totalPrices(x) {
+    var totalprice = 0;
+    for (var i = 0; i < x.length; i++) {
+       totalprice = totalprice + x[i].price;
     }
+    return totalprice;
+}
+console.log(totalPrices(storeItems));
+
+
+
 </script>
 </body>
 </html>

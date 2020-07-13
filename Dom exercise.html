@@ -25,6 +25,32 @@
 
 <script>
 
+    (function () {
+
+        var redText = document.getElementById("red-text");
+        redText.style.color ="red";
+
+        var boldFont = document.getElementById("bold-font");
+        boldFont.style.fontWeight ="bold";
+
+        var Font = document.getElementById("helvetica-font");
+        Font.style.fontFamily ="Helvetica";
+
+     //  var class1 = document.getElementsByClassName("log-me");
+     // console.log(class1.getAttribute("class")) ;
+
+     var class2 = document.getElementById("i-have-an-id");
+     console.log( class2.getAttribute("id"));
+
+
+     // replacing movie
+        var secondMovie = document.getElementById("movie-2");
+        secondMovie.replaceWith("2. Holiday");
+
+        var thirdfirstMovie = document.getElementById("movie-3");
+        thirdfirstMovie.replaceWith("3. Pulp Fiction");
+
+    }());
 </script>
 </body>
 </html>

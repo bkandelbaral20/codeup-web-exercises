@@ -7,18 +7,17 @@
 <body>
 <script>
 //TODO: Write a function that loops through a string. For each character in the string that is a vowel (aeiou/AEIOU), add it to an array and return the array
-// function loopsString (str){
-//     var arr = [];
-//     var myVowels = "aeiouAEIOU";
-//     for (var i = 0; i < str.length; i++) {
-//         if (myVowels.includes.indexOf(str[i].toLowerCase())) {
-//           arr.push.str[i];
-//         }
-//     }
-//     return arr;
-// }
-// console.log(loopsString ("Binjita"));
 
+function loop(str){
+    var myVowels = "aeiouAEIOU";
+    var arr =[];
+    for(var i=0;i<str.length;i++){
+        if(myVowels.includes(str[i])){
+            arr.push(str[i]);
+        }
+    }
+    return arr;
+}
 //TODO: Write a function that checks if someone is 21 or older. If they are over 21, return true. Otherwise return false.
 
 function someoneAge(yrs){
@@ -65,15 +64,16 @@ price: 140.99
 }
 ];
 
-function totalPrices(x) {
-    var totalprice = 0;
-    for (var i = 0; i < x.length; i++) {
-       totalprice = totalprice + x[i].price;
-    }
-    return totalprice;
-}
-console.log(totalPrices(storeItems));
+function mostExpensive(x) {
+    var highest = x[0];
 
+    x.forEach(function (item) {
+        if (item.price > highest.price) {
+            highest = item;
+        }
+    })
+    return highest;
+}
 
 
 </script>

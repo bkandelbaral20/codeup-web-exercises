@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>jQuery exercises</title>
+    <style>
+        .highlight {
+            background-color: #0fb784;
+        }
+    </style>
 </head>
 <body>
 //html section
@@ -21,24 +26,56 @@
 
 <script src="js/jquery-2.2.4.js"></script>
 <script>
-//id selectors
-//     alert( $("#head1").html());
-//     alert( $("#list").text());
+    $(document).ready(function(){
+        console.log("Ready to roll");
 
-    // class selectors
-   // $(".codeup").css("border","1px solid red");
+        //id selectors
+    //
+    // alert( $("#head1").html());
+    // alert( $("#list").text());
 
-    //element selectors
-    // $("li").css({"fontSize":"20px"});
-   // $("h1","p","li").css({background: "#FFFF00"});
+        // class selectors
 
-    //multiple selector
-//$("h1,p,li").css("highlight");
+     // $(".codeup").css("border","1px solid red");
 
-    //jquery events
-$( "#head1" ).click(function() .css('background-color', '#FFF');
+      //element selectors
+
+    //  $("li").css("fontSize", "20px");
+
+        //crafting selector using add class
+    // $ ("h1").addClass("highlight");
+    //  $ ("p").addClass("highlight");
+    //  $ ("li").addClass("highlight");
+      //  alert($("h1").html());
+
+        //multiple selector
+
+    // $("h1,p,li").css('background-color', '#0FF');
 
 
+             //jquery events
+
+     //click event
+
+        $("h1").click(function() {
+      $(this).css('background-color', 'yellow');
+        });
+
+        //dblclick event
+        $("p").dblclick(function() {
+          $(this).css("fontSize", "18px");
+        });
+
+        //hover event
+      $('li').hover(
+      function() {
+     $(this).css('color', 'blue');
+       },
+      function() {
+      $(this).css('color', 'black');
+       }
+        );
+    });
 
 </script>
 </body>

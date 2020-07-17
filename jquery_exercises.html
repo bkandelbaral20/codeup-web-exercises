@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery exercises</title>
+</head>
+<body>
+//html section
+<h1 id="head1">This is my first jquery exercise</h1>
+<h4 class="codeup">This section will be my favourite one because i love jquery than js. </h4>
+<p id="codeup">There are different language for frontend developers</p>
+<p id="list">The list of languages are listed below:</p>
+
+<ul class="codeup">
+    <li>Javascript</li>
+    <li>Css</li>
+    <li>Html</li>
+    <li>React</li>
+</ul>
+
+
+<script src="js/jquery-2.2.4.js"></script>
+<script>
+//id selectors
+//     alert( $("#head1").html());
+//     alert( $("#list").text());
+
+    // class selectors
+   // $(".codeup").css("border","1px solid red");
+
+    //element selectors
+    // $("li").css({"fontSize":"20px"});
+    $("h1","p","li").css({background: "#FFFF00"});
+
+    //multiple selector
+//$("h1,p,li").css("highlight");
+
+
+
+</script>
+</body>
+</html>

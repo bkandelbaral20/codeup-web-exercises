@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <title>jquery </title>
     <style>
-        .invisible {
-            visibility: hidden;
-        }
+        /*.invisible {*/
+        /*    visibility: hidden;*/
+        /*}*/
+
     </style>
 </head>
 <body>
 <div>
-<p>Here are the FAQ's of National Park</p>
-
+    <button id="main">Toggle on and off</button>
 <dl>
-<!--    <dt>Where do I Make Reservations to Stay ?</dt>-->
+    <dt>FAQ's of National Parks</dt>
     <dd class="invisible">Reservations can be made through online. we  are open from late spring through fall !</dd>
     <dd class="invisible">Is Yellowstone the largest national park?</dd>
     <dd class="invisible">What is the difference between a national park and a national forest?</dd>
@@ -29,8 +29,22 @@
 </div>
 <script src="js/jquery-2.2.4.js"></script>
 <script>
-    "use strict";
+    "use strict" ;
+    //adding invisible class to dd element using jquery
+   // $("dd").addClass('invisible');
+    // hiding its elements
+    //$(".invisible").css('visibility','hidden');
 
+    $(document).ready(function(){
+        $("#main").click(function(){
+            $(".invisible").toggle();
+        });
+    });
+
+    //if dt is click, it will be highlighted
+    $("dt").click(function (){
+        $(this).css("background-Color", "red");
+    })
 
 </script>
 </body>

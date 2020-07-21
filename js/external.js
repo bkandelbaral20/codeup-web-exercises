@@ -14,7 +14,7 @@ if (play === true) {
 }
  // Alternate method
 
-let color =prompt("what is your favourite color");
+let color = prompt("what is your favourite color");
 alert("Great! " + color + "is my favourite color too.")
 
 //Write some JavaScript code, that is, variables and operators, to describe the following scenarios. Do not worry about the real operations to get the values, the goal of these exercises is to understand how real world conditions can be represented with code.

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Konami Code Exercise</title>
+<style>
+    h1{
+        background-color: lightpink;
+        font-family:"Apple Color Emoji";
+        margin-left:auto;
+        margin-right:auto;
+        width:50%;
+        text-align:center;
+    }
+
+</style>
+</head>
+<body>
+<h1>Please! type  the konami code here : </h1>
+
+<div class="body"></div>
+
+<script src="js/jquery-2.2.4.js"></script>
+<script>
+    alert("Welcome to Konami Coding ");
+    var index = 0,
+        konami = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
+
+    let unlockSound = new Audio('./audio/title theme.mp3');
+
+    $(document).keydown(
+        function (e) {
+
+            //prints userinput
+            console.log(e.keyCode);
+
+            if (e.keyCode === konami[index++]) {
+                $('#' + index).addClass('on');
+
+                //if userinput same as konami code
+                if (index === konami.length) {
+                 alert("You have added 30 lives!");
+                 $('.body').css("background-image", "url('./img/konami.png')") 
+                    document.body.style.backgroundImage = "url('./img/konami.png')"; 
+
+                 unlockSound.play();
+                index = 0;
+                }
+            } else {
+                alert("please try 1 more time");
+                index = 0
+            }
+        });
+</script>
+</body>
+</html>

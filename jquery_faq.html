@@ -1,51 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>jquery </title>
-    <style>
-        /*.invisible {*/
-        /*    visibility: hidden;*/
-        /*}*/
-
+    <style>enbluened
+        .emboldened{
+            font-weight: bold;
+        }
+        .enbluened{
+            color: blue;
+        }
     </style>
 </head>
 <body>
-<div>
+<div id="FAQ">
     <button id="main">Toggle on and off</button>
 <dl>
     <dt>FAQ's of National Parks</dt>
-    <dd class="invisible">Reservations can be made through online. we  are open from late spring through fall !</dd>
-    <dd class="invisible">Is Yellowstone the largest national park?</dd>
-    <dd class="invisible">What is the difference between a national park and a national forest?</dd>
-    <dd class="invisible">Can we swim in rivers and lakes?</dd>
-    <dd class="invisible">What is the highest peak in the park?</dd>
-    <dd class="invisible">Can I see the collections when I visit?</dd>
-    <dd class="invisible">How Do I Get to the Canyon?</dd>
-    <dd class="invisible">What causes the different  colors in the canyon ? </dd>
-    <dd class="invisible">What animals can i see in this area?</dd>
-    <dd class="invisible">is there any biking trails ?</dd>
+    <br>
+    <dd>Reservations can be made through online. we  are open from late spring through fall !</dd>
+    <dd >Is Yellowstone the largest national park?</dd>
+    <dd >What is the difference between a national park and a national forest?</dd>
+    <dd>Can we swim in rivers and lakes?</dd>
+    <dd>What is the highest peak in the park?</dd>
+    <dd >Can I see the collections when I visit?</dd>
+    <dd >How Do I Get to the Canyon?</dd>
+    <dd >What causes the different  colors in the canyon ? </dd>
+    <dd>What animals can i see in this area?</dd>
+    <dd >is there any biking trails ?</dd>
 </dl>
 </div>
+<!--    // jquery Traversing methods-->
+    <div id="parks">
+    <h3>Dry Tortugas</h3>
+    <ul id="dry">
+        <li>This place is so beautiful</li>
+        <li>The Dry Tortugas are a small group of islands, located in the Gulf of Mexico</li>
+        <li>The park preserves Fort Jefferson and the seven Dry Tortugas islands, the westernmost and most isolated of the Florida Keys.</li>
+        <li>It is a part of the Everglades & Dry Tortugas Biosphere Reserve, established by UNESCO in 1976 </li>
+    </ul>
+
+        <h3>Zion National park</h3>
+        <ul id ="zion">
+        <li>Zion National Park is a southwest Utah nature preserve distinguished by Zion Canyon’s steep red cliffs</li>
+        <li>Zion Canyon Scenic, leading to forest trails along the Virgin River.</li>
+        <li>The river flows to the Emerald Pools, which have waterfalls and a hanging garden.</li>
+        <li>Also along the river, partly through deep chasms,is Zion Narrows wading hike</li>
+    </ul>
+
+        <h3>Yosemite National Park</h3>
+        <ul id="Yosemite">
+        <li>Yosemite National Park is in California’s Sierra Nevada mountains</li>
+        <li>In Yosemite Village are shops, restaurants, lodging, the Yosemite Museum and the Ansel Adams Gallery</li>
+        <li>I really want to visit this place</li>
+        <li>The best times to visit Yosemite are May and September </li>
+    </ul>
+    <button id="btn">National Parks</button>
+</div>
+
 <script src="js/jquery-2.2.4.js"></script>
 <script>
     "use strict" ;
-    //adding invisible class to dd element using jquery
-   // $("dd").addClass('invisible');
-    // hiding its elements
-    //$(".invisible").css('visibility','hidden');
 
     $(document).ready(function(){
+
+        //adding class for all dd element
+        $("dd").addClass("invisible");
+
         $("#main").click(function(){
             $(".invisible").toggle();
         });
     });
 
     //if dt is click, it will be highlighted
-    $("dt").click(function (){
-        $(this).css("background-Color", "red");
+    $("dt ").click(function (){
+        $(this).css("backgroundColor","red");
     })
 
+    //second exercises
+
+    //Create a button that, when clicked, makes the last li in each ul have a yellow background.
+    // $("#dry").children("li").last().click(function(){
+    //     $(this).css('background-color', '#FF0');
+    // });
+    // $("#zion").children("li").last().click(function(){
+    //     $(this).css('background-color', '#FF0');
+    // });
+    //
+    // $("#Yosemite").children("li").last().click(function(){
+    //     $(this).css('background-color', '#FF0');
+    // });
+    $(document).ready(function(){
+        $("#btn").click(function(){
+            $("ul").each(function(){
+                $(this.children().last().css("backgroundColor","yellow"));
+            })
+        });
+
+  // When any h3 is clicked, the li's underneath it should be bolded. Use font-weight: bold to achieve this.
+        $('h3').click(function() {
+          $(this).next().children().toggleClass("emboldened")
+        });
+
+  //When any list item is clicked, first li of the parent ul should have a font color of blue.
+        $("li").click(function(){
+            $(this).parent().children().first().toggleClass("enbluened");
+        })
+
+    });
 </script>
 </body>
 </html>

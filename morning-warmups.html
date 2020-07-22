@@ -281,7 +281,8 @@ let fibonacci = function(num) {
     return output;
 }
 
-//Write a function that will return an array passed sorted in reverse alphabetical order, when passed an array of strings. It should return null if any element within the array is not a string.
+//Write a function that will return an array passed sorted in reverse alphabetical order, when passed an array of strings.
+// It should return null if any element within the array is not a string.
 function arraySorted (str) {
     var newArray= [];
     for(var i=0; i<str.length;i++){
@@ -307,6 +308,18 @@ console.log(arraySorted([0]));
     }
     console.log(isDivisible( 4,2));
     console.log(isDivisible( "string", 3));
+
+//Write a JavaScript function that takes in a length in inches (a number), and converts it to a string listing the length
+// in feet and inches. (Example: 78 => 6’6”). Non-number arguments should have the function return null.
+
+function lengthInInches(num){
+    if(typeof (num) === "number"){
+        return Math.floor(num/ 12) + "'" + (num%12)+ "\"";
+    }return null;
+}
+console.log(lengthInInches(87));
+console.log(lengthInInches(90));
+console.log(lengthInInches("Binjita"));
 
 </script>
 </body>

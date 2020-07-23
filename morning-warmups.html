@@ -321,6 +321,18 @@ console.log(lengthInInches(87));
 console.log(lengthInInches(90));
 console.log(lengthInInches("Binjita"));
 
+//Write a function that takes in a string and returns the number of words in the string. Non-string inputs should return null.
+    function stringToNumber(str){
+        for(var i=0;i<str.length;i++){
+            if(typeof str === "string"){
+                return str.split(" ").length;
+            }
+            return null;
+        }
+
+    }
+    console.log(stringToNumber("Binjita"));
+    console.log(stringToNumber(784));
 </script>
 </body>
 </html>

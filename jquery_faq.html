@@ -5,7 +5,7 @@
     <title>jquery </title>
     <style>enbluened
         .emboldened{
-            font-weight: bold;
+        font-weight: bold;
         }
         .enbluened{
             color: blue;
@@ -92,14 +92,14 @@
     // });
     $(document).ready(function(){
         $("#btn").click(function(){
-            $("ul").each(function(){
-                $(this.children().last().css("backgroundColor","yellow"));
-            })
+            $("ul li:last-child").css(
+                'background-color','yellow'
+            )
         });
 
   // When any h3 is clicked, the li's underneath it should be bolded. Use font-weight: bold to achieve this.
-        $('h3').click(function() {
-          $(this).next().children().toggleClass("emboldened")
+        $("h3").click(function() {
+          $(this).next().children().addClass("emboldened");
         });
 
   //When any list item is clicked, first li of the parent ul should have a font color of blue.

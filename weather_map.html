@@ -1,21 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Weather Map</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-<!--    <link rel="stylesheet" href="css/">-->
-</head>
-<body>
-<div class="container">
-    <div class=top">
-<h1>Weather Map</h1>
-<p class="city">Current City: San Antonio</p>
-    </div>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet'/>
+    <!--    <link rel="stylesheet" href="css/">-->
+    <style>
+    *{ margin: 0; padding: 0; }
+    #map { position: relative; height: 50em ;width: 100%; }
 
-    <div id="cards" class="row">
+    h1{
+        font: 30px'Helvetica Neue', Arial, Helvetica, sans-serif;
+    }
+</style>
+</head>
+
+<body>
+<div class="container col-12 w-100">
+
+<!--Header area-->
+    <div class="top col-12 d-flex">
+<h1 class="head w-100">Weather Map</h1>
+<p class="city ml-auto">Current city: </p>
+    </div>
+<!--Search places-->
+  <div class="search col-12 p-3">
+    <nav class="navbar navbar-light bg-light">
+        <form class="form-inline"><span>Place </span>
+            <input class="form-control mr-sm-2" type="search">
+            <button class="btn btn-primary" type="submit">Find</button>
+        </form>
+    </nav>
+ </div>
+<!--    Cards-->
+    <div id="cards" class=" row p-3">
+
 <!--//first card-->
-    <div id="card0" class="card" style="width: 13rem;">
+    <div id="card0" class="card " style="width: 12rem ;">
         <div id="weatherDate0"  class="card-header ">
             date
         </div>
@@ -30,7 +52,7 @@
     </div>
 
 <!--    2nd card-->
-    <div id="card1" class="card" style="width: 14rem;">
+    <div id="card1" class="card" style="width: 12rem;">
         <div id="weatherDate1"  class="card-header">
             date
         </div>
@@ -45,7 +67,7 @@
     </div>
 
 <!--   3rd card-->
-    <div id="card2" class="card" style="width: 14rem;">
+    <div id="card2" class="card" style="width: 12rem;">
         <div id="weatherDate2"  class="card-header">
             date
         </div>
@@ -60,7 +82,7 @@
     </div>
 
 <!--4th card -->
-    <div id="card3" class="card" style="width: 14rem;">
+    <div id="card3" class="card" style="width: 12rem;">
         <div id="weatherDate3"  class="card-header">
             date
         </div>
@@ -74,7 +96,7 @@
         </ul>
     </div>
 <!--5th card-->
-    <div id="card4" class="card" style="width: 14rem;">
+    <div id="card4" class="card" style="width: 12rem;">
         <div id="weatherDate4"  class="card-header">
             date
         </div>
@@ -88,22 +110,23 @@
         </ul>
     </div>
     </div>
-</div>
 
-<!--for each loop-->
-<!--<div class="text-center">-->
-<!--    <div id="weather-data" class="row">-->
-<!--        &lt;!&ndash;Appended code from JS will go here&ndash;&gt;-->
-<!--    </div>-->
+<!-- Mapbox -->
+    <!-- The HTML element that serves as the Mapbox container -->
+    <div id='map' class="goggle border"> </div>
+
+
+</div>
 
 <!--//jquery links-->
 <script src="js/jquery-2.2.4.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <script src="js/keys.js"></script>
 <script src="js/weathermap.js"></script>
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+<script src="js/mapbox-geocoder-utils.js"></script>
 </body>
 </html>

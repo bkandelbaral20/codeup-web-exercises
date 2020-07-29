@@ -6,38 +6,38 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet'/>
     <!--    <link rel="stylesheet" href="css/">-->
-    <style>
-    *{ margin: 0; padding: 0; }
-    #map { position: relative; height: 50em ;width: 100%; }
-
-    h1{
-        font: 30px'Helvetica Neue', Arial, Helvetica, sans-serif;
-    }
-</style>
+    <link rel="stylesheet" href="css/weathermap.css">
 </head>
 
 <body>
-<div class="container col-12 w-100">
+<div class="container col-12 w-100 ">
 
 <!--Header area-->
     <div class="top col-12 d-flex">
-<h1 class="head w-100">Weather Map</h1>
-<p class="city ml-auto">Current city: </p>
+<h1 class="head"> 5 day Weather</h1>
+<p class="city ml-auto mt-2">Current city : </p>
     </div>
 <!--Search places-->
-  <div class="search col-12 p-3">
-    <nav class="navbar navbar-light bg-light">
-        <form class="form-inline"><span>Place </span>
-            <input class="form-control mr-sm-2" type="search">
-            <button class="btn btn-primary" type="submit">Find</button>
+  <div class="search col-12 pb-3">
+    <nav class="navbar navbar-light bg-light ">
+        <form class="form-inline ">
+            <input  id="forminput" class="form-control mr-sm-4" type="search" placeholder="search places">
+            <button id="find" class="btn btn-primary mr-sm-4" type="submit">Find</button>
+            <a class="nav-link btn mr-3" href="#">Today</a>
+            <a class="nav-link btn mr-3" href="#">Hourly</a>
+            <a class="nav-link btn mr-3" href="#">Weekend</a>
+            <a class="nav-link btn mr-3" href="#">Monthly</a>
+            <a class="nav-link btn mr-3" href="#">More Forecasts</a>
+            <a class="nav-link btn mr-3" href="#">Radar</a>
+            <a class="nav-link btn mr-3" href="#">About Us</a>
         </form>
     </nav>
  </div>
 <!--    Cards-->
-    <div id="cards" class=" row p-3">
+    <div id="cards" class="row p-1 ml-3 mb-3 w-100 ">
 
 <!--//first card-->
-    <div id="card0" class="card " style="width: 12rem ;">
+    <div id="card0" class="card" style="width: 15rem ;">
         <div id="weatherDate0"  class="card-header ">
             date
         </div>
@@ -52,7 +52,7 @@
     </div>
 
 <!--    2nd card-->
-    <div id="card1" class="card" style="width: 12rem;">
+    <div id="card1" class="card" style="width: 15rem;">
         <div id="weatherDate1"  class="card-header">
             date
         </div>
@@ -67,7 +67,7 @@
     </div>
 
 <!--   3rd card-->
-    <div id="card2" class="card" style="width: 12rem;">
+    <div id="card2" class="card" style="width: 15rem;">
         <div id="weatherDate2"  class="card-header">
             date
         </div>
@@ -82,7 +82,7 @@
     </div>
 
 <!--4th card -->
-    <div id="card3" class="card" style="width: 12rem;">
+    <div id="card3" class="card" style="width: 15rem;">
         <div id="weatherDate3"  class="card-header">
             date
         </div>
@@ -96,7 +96,7 @@
         </ul>
     </div>
 <!--5th card-->
-    <div id="card4" class="card" style="width: 12rem;">
+    <div id="card4" class="card" style="width: 15rem;">
         <div id="weatherDate4"  class="card-header">
             date
         </div>
@@ -113,7 +113,7 @@
 
 <!-- Mapbox -->
     <!-- The HTML element that serves as the Mapbox container -->
-    <div id='map' class="goggle border"> </div>
+    <div id='map' class="goggle border mb-3 "> </div>
 
 
 </div>

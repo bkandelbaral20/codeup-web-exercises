@@ -6,6 +6,7 @@
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
 
     <!-- Mapbox CSS -->
+                    <!--    Geocode-->
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
 
     <!-- Custom CSS -->
@@ -13,11 +14,10 @@
         *{ margin: 0; padding: 0; }
         #map { position: absolute; top: 0; bottom: 0; width: 100%; }
 
-        h3{
-            max-width: 400px;
-            font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-        }
-
+        /*h3{*/
+        /*    max-width: 400px;*/
+        /*    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+        /*}*/
     </style>
 
 </head>
@@ -70,6 +70,7 @@
     favRestaurants.forEach(function(restaurant) {
         geocode( restaurant.address, mapboxKey).then(function(data) {
             console.log(data);
+            alert(data)
             var marker1= new mapboxgl.Marker()
                 .setLngLat(data)
                 .addTo(map);

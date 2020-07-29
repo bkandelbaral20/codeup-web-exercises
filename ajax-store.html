@@ -109,9 +109,9 @@
     //             its contents and fields
     //       HINT: You will want to target #insertProducts for your new HTML elements
 
-    $.get( "./data/inventory.json"). done(function( data ) {
+    $.get( "./data/inventory.json").done(function(data) {
         $("#insertProduct").html("");
-            data.forEach(function (product) {
+            data.forEach(function(product) {
                 $('#insertProducts').append(
                     "<tr>"
                     + "<td>" + product.title + "</td>"

@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>jquery </title>
-    <style>enbluened
+    <style>
+        .invisible {
+            visibility: hidden;
+        }
         .emboldened{
         font-weight: bold;
         }
         .enbluened{
             color: blue;
         }
+        .highlighted {
+        background-color: red;
+        }
     </style>
 </head>
 <body>
 <div id="FAQ">
-    <button id="main">Toggle on and off</button>
+    <button id="btn1">Toggle on and off</button>
 <dl>
     <dt>FAQ's of National Parks</dt>
     <br>
@@ -67,35 +73,23 @@
         //adding class for all dd element
         $("dd").addClass("invisible");
 
-        $("#main").click(function(){
-            $(".invisible").toggle();
+        $("#btn1").click(function(){
+            $("dd").toggleClass("invisible");
         });
     });
 
     //if dt is click, it will be highlighted
-    $("dt ").click(function (){
-        $(this).css("backgroundColor","red");
+    $("dt").click(function (){
+        $(this).addClass("highlighted");
     })
-
-    //second exercises
+    //--------second exercises
 
     //Create a button that, when clicked, makes the last li in each ul have a yellow background.
-    // $("#dry").children("li").last().click(function(){
-    //     $(this).css('background-color', '#FF0');
-    // });
-    // $("#zion").children("li").last().click(function(){
-    //     $(this).css('background-color', '#FF0');
-    // });
-    //
-    // $("#Yosemite").children("li").last().click(function(){
-    //     $(this).css('background-color', '#FF0');
-    // });
+
     $(document).ready(function(){
-        $("#btn").click(function(){
-            $("ul li:last-child").css(
-                'background-color','yellow'
-            )
-        });
+      $("#btn").click(function(){
+          $("ul li:first-child").css("background-color", "red");
+      })
 
   // When any h3 is clicked, the li's underneath it should be bolded. Use font-weight: bold to achieve this.
         $("h3").click(function() {
@@ -104,7 +98,7 @@
 
   //When any list item is clicked, first li of the parent ul should have a font color of blue.
         $("li").click(function(){
-            $(this).parent().children().first().toggleClass("enbluened");
+            $("ul li:first-child").toggleClass("enbluened");
         })
 
     });

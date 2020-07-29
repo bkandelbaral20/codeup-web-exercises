@@ -22,7 +22,8 @@
     <li id="movie-2">Batman: The Dark Knight</li>
     <li id="movie-3">Inception</li>
         </ol>
-
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
 <script>
 
     (function () {
@@ -36,8 +37,11 @@
         var Font = document.getElementById("helvetica-font");
         Font.style.fontFamily ="Helvetica";
 
-     //  var class1 = document.getElementsByClassName("log-me");
-     // console.log(class1.getAttribute("class")) ;
+     var logme1 = $("#helvetica-font").next().text();
+     console.log(logme1);
+
+     var className = $(".log-me").getAttributeNames("log-me");
+     console.log(className);
 
      var class2 = document.getElementById("i-have-an-id");
      console.log( class2.getAttribute("id"));

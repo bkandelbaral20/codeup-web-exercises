@@ -1,0 +1,22 @@
+
+
+body{
+    margin: 0; padding: 0;
+    background-image: url("https://images.pexels.com/photos/127577/nature-stars-night-galaxy-127577.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260g");
+
+}
+
+#map {
+    position: relative; height: 30em ;width: 100%;
+}
+
+ h1 ,p{
+    font-family: "American Typewriter";
+   color : navajowhite;
+}
+#cards {
+    height : 0%;
+
+}
+
+

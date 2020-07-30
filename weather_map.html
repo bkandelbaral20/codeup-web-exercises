@@ -5,128 +5,130 @@
     <title>Weather Map</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet'/>
-    <!--    <link rel="stylesheet" href="css/">-->
     <link rel="stylesheet" href="css/weathermap.css">
 </head>
 
 <body>
-<div class="container col-12 w-100 ">
+<div class="container col-12">
 
-<!--Header area-->
-    <div class="top col-12 d-flex">
-<h1 class="head"> 5 day Weather</h1>
-<p class="city ml-auto mt-2">Current city : </p>
+    <!--Header area-->
+    <div class="top d-flex">
+        <h1 class="head"> 5 day Weather</h1>
+        <p class="city ml-auto mt-2"></p>
     </div>
-<!--Search places-->
-  <div class="search col-12 pb-3">
-    <nav class="navbar navbar-light bg-light ">
-        <form class="form-inline ">
-            <input  id="forminput" class="form-control mr-sm-4" type="search" placeholder="search places">
-            <button id="find" class="btn btn-primary mr-sm-4" type="submit">Find</button>
-            <a class="nav-link btn mr-3" href="#">Today</a>
-            <a class="nav-link btn mr-3" href="#">Hourly</a>
-            <a class="nav-link btn mr-3" href="#">Weekend</a>
-            <a class="nav-link btn mr-3" href="#">Monthly</a>
-            <a class="nav-link btn mr-3" href="#">More Forecasts</a>
-            <a class="nav-link btn mr-3" href="#">Radar</a>
-            <a class="nav-link btn mr-3" href="#">About Us</a>
-        </form>
-    </nav>
- </div>
-<!--    Cards-->
-    <div id="cards" class="row p-1 ml-3 mb-3 w-100 ">
 
-<!--//first card-->
-    <div id="card0" class="card" style="width: 15rem ;">
-        <div id="weatherDate0"  class="card-header ">
-            date
+    <!--Search places-->
+    <div class="search  pb-3">
+        <nav class="navbar navbar-light bg-light">
+            <form class="form-inline ">
+                <input id="forminput" class="form-control mr-sm-4" type="search" placeholder="search places">
+                <button id="find" class="btn btn-primary mr-sm-4" type="submit">Find</button>
+                <a class="nav-link btn mr-3 " href="#">Today</a>
+                <a class="nav-link btn mr-3 " href="#">Hourly</a>
+                <a class="nav-link btn mr-3 " href="#">Weekend</a>
+                <a class="nav-link btn mr-3 " href="#">Monthly</a>
+                <a class="nav-link btn mr-3 " href="#">More Forecasts</a>
+                <a class="nav-link btn mr-3 " href="#">Radar</a>
+                <a class="nav-link btn mr-3 " href="#">About Us</a>
+            </form>
+        </nav>
+    </div>
+
+    <!--    Cards-->
+    <div id="cards" class="row d-flex justify-content-between mr-3 ml-3 mb-3 ">
+
+        <!--//first card-->
+        <div id="card0" class="card" style="width: 15rem ;">
+            <div id="weatherDate0" class="card-header bg-indigo ">
+                date
+            </div>
+            <ul class="list-group list-group-flush">
+                <li id="highlowtemp0" class="list-group-item">High and low temperature</li>
+                <li id="icon0" class="list-group-item">Icons</li>
+                <li id="description0" class="list-group-item">Description</li>
+                <li id="humid0" class="list-group-item">Humidity</li>
+                <li id="wind0" class="list-group-item">Wind</li>
+                <li id="pressure0" class="list-group-item">Pressure</li>
+            </ul>
         </div>
-        <ul class="list-group list-group-flush">
-            <li id="highlowtemp0" class="list-group-item">High and low temperature</li>
-            <li id="icon0" class="list-group-item">Icons</li>
-            <li id="description0" class="list-group-item">Description</li>
-            <li id="humid0" class="list-group-item">Humidity</li>
-            <li id="wind0" class="list-group-item">Wind</li>
-            <li id="pressure0" class="list-group-item">Pressure</li>
-        </ul>
+
+        <!--    2nd card-->
+        <div id="card1" class="card" style="width: 15rem;">
+            <div id="weatherDate1" class="card-header">
+                date
+            </div>
+            <ul class="list-group list-group-flush">
+                <li id="highlowtemp1" class="list-group-item">High and low temperature</li>
+                <li id="icon1" class="list-group-item">Icons</li>
+                <li id="description1" class="list-group-item">Description</li>
+                <li id="humid1" class="list-group-item">Humidity</li>
+                <li id="wind1" class="list-group-item">Wind</li>
+                <li id="pressure1" class="list-group-item">Pressure</li>
+            </ul>
+        </div>
+
+        <!--   3rd card-->
+        <div id="card2" class="card" style="width: 15rem;">
+            <div id="weatherDate2" class="card-header">
+                date
+            </div>
+            <ul class="list-group list-group-flush">
+                <li id="highlowtemp2" class="list-group-item">High and low temperature</li>
+                <li id="icon2" class="list-group-item">Icons</li>
+                <li id="description2" class="list-group-item">Description</li>
+                <li id="humid2" class="list-group-item">Humidity</li>
+                <li id="wind2" class="list-group-item">Wind</li>
+                <li id="pressure2" class="list-group-item">Pressure</li>
+            </ul>
+        </div>
+
+        <!--4th card -->
+        <div id="card3" class="card" style="width: 15rem;">
+            <div id="weatherDate3" class="card-header">
+                date
+            </div>
+            <ul class="list-group list-group-flush">
+                <li id="highlowtemp3" class="list-group-item">High and low temperature</li>
+                <li id="icon3" class="list-group-item">Icons</li>
+                <li id="description3" class="list-group-item">Description</li>
+                <li id="humid3" class="list-group-item">Humidity</li>
+                <li id="wind3" class="list-group-item">Wind</li>
+                <li id="pressure3" class="list-group-item">Pressure</li>
+            </ul>
+        </div>
+        <!--5th card-->
+        <div id="card4" class="card" style="width: 15rem;">
+            <div id="weatherDate4" class="card-header">
+                date
+            </div>
+            <ul class="list-group list-group-flush">
+                <li id="highlowtemp4" class="list-group-item">High and low temperature</li>
+                <li id="icon4" class="list-group-item">Icons</li>
+                <li id="description4" class="list-group-item">Description</li>
+                <li id="humid4" class="list-group-item">Humidity</li>
+                <li id="wind4" class="list-group-item">Wind</li>
+                <li id="pressure4" class="list-group-item">Pressure</li>
+            </ul>
+        </div>
     </div>
 
-<!--    2nd card-->
-    <div id="card1" class="card" style="width: 15rem;">
-        <div id="weatherDate1"  class="card-header">
-            date
-        </div>
-        <ul class="list-group list-group-flush">
-            <li id="highlowtemp1" class="list-group-item">High and low temperature</li>
-            <li id="icon1" class="list-group-item">Icons</li>
-            <li id="description1" class="list-group-item">Description</li>
-            <li id="humid1" class="list-group-item">Humidity</li>
-            <li id="wind1" class="list-group-item">Wind</li>
-            <li id="pressure1" class="list-group-item">Pressure</li>
-        </ul>
-    </div>
-
-<!--   3rd card-->
-    <div id="card2" class="card" style="width: 15rem;">
-        <div id="weatherDate2"  class="card-header">
-            date
-        </div>
-        <ul class="list-group list-group-flush">
-            <li id="highlowtemp2" class="list-group-item">High and low temperature</li>
-            <li id="icon2" class="list-group-item">Icons</li>
-            <li id="description2" class="list-group-item">Description</li>
-            <li id="humid2" class="list-group-item">Humidity</li>
-            <li id="wind2" class="list-group-item">Wind</li>
-            <li id="pressure2" class="list-group-item">Pressure</li>
-        </ul>
-    </div>
-
-<!--4th card -->
-    <div id="card3" class="card" style="width: 15rem;">
-        <div id="weatherDate3"  class="card-header">
-            date
-        </div>
-        <ul class="list-group list-group-flush">
-            <li id="highlowtemp3" class="list-group-item">High and low temperature</li>
-            <li id="icon3" class="list-group-item">Icons</li>
-            <li id="description3" class="list-group-item">Description</li>
-            <li id="humid3" class="list-group-item">Humidity</li>
-            <li id="wind3" class="list-group-item">Wind</li>
-            <li id="pressure3" class="list-group-item">Pressure</li>
-        </ul>
-    </div>
-<!--5th card-->
-    <div id="card4" class="card" style="width: 15rem;">
-        <div id="weatherDate4"  class="card-header">
-            date
-        </div>
-        <ul class="list-group list-group-flush">
-            <li id="highlowtemp4" class="list-group-item">High and low temperature</li>
-            <li id="icon4" class="list-group-item">Icons</li>
-            <li id="description4" class="list-group-item">Description</li>
-            <li id="humid4" class="list-group-item">Humidity</li>
-            <li id="wind4" class="list-group-item">Wind</li>
-            <li id="pressure4" class="list-group-item">Pressure</li>
-        </ul>
-    </div>
-    </div>
-
-<!-- Mapbox -->
+    <!-- Mapbox -->
     <!-- The HTML element that serves as the Mapbox container -->
-    <div id='map' class="goggle border mb-3 "> </div>
-
+    <div id='map' class="goggle border mb-3 "></div>
 
 </div>
 
 <!--//jquery links-->
 <script src="js/jquery-2.2.4.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 <script src="js/keys.js"></script>
 <script src="js/weathermap.js"></script>
-<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 <script src="js/mapbox-geocoder-utils.js"></script>
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 </body>
 </html>

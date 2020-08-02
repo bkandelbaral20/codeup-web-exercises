@@ -334,7 +334,7 @@ console.log(lengthInInches("Binjita"));
     console.log(stringToNumber("Binjita"));
     console.log(stringToNumber(784));
 
-//use reduce method to get the height from the object
+//use reduce method to get the highest height from the following object
 var hamsters = [
 {
     name: "Hamtaro",
@@ -377,6 +377,31 @@ let tallestHam = hamsters.reduce((tallHamster, hamham) => {
   }
 }, {heightInMM: 0});
 console.log(tallestHam);
+
+//Write a function that returns “fizz”, “buzz”, or “fizzbuzz” based on the conditions of the famous FizzBuzz exercise.
+// Any number that doesn’t match these conditions should return the number passed. Any non-number passed should have
+// the function return null.
+
+function fizbuz (num){
+    for (let i=1; i <= num; i++) {
+        if(typeof num !== "number"){
+            return null;
+        } if (i % 3 === 0 && i % 5 === 0) {
+            console.log("Fizzbuzz");
+        }
+        if (i % 3 === 0) {
+            console.log("fizz");
+        }
+        else if (i % 5 === 0) {
+            console.log("Buzz");
+        }
+        else {
+            console.log(i);
+        }
+    }
+}
+console.log(fizbuz("3"));
+
 </script>
 </body>
 </html>

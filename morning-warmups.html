@@ -6,156 +6,165 @@
 </head>
 <body>
 <script>
-// <!-- create a function that takes number and return number multiplied by 5-->
+    // <!-- create a function that takes number and return number multiplied by 5-->
 
     function multiplyByFive(num) {
         return num * 5;
     }
+
     console.log(multiplyByFive(6));
 
-//Write a function that sings “Happy Birthday”
-// Make it sing to whoever’s birthday it is
+    //Write a function that sings “Happy Birthday”
+    // Make it sing to whoever’s birthday it is
 
-    function birthdaySong(name){
+    function birthdaySong(name) {
         console.log("happy birthday to you,");
         console.log("happy birthday to you,");
         console.log("happy birthday to Dear " + name);
         console.log("happy birthday to you");
     }
+
     console.log(birthdaySong("David"));
 
-// Write a js function that will take in a number and count from there count the next 5 numbers. If you send in 5 it will output: 5 6 7 8 9 ...or...
+    // Write a js function that will take in a number and count from there count the next 5 numbers. If you send in 5 it will output: 5 6 7 8 9 ...or...
 
-    function countFiveNumbers(num){
-        for(let i=0;i<5;i++){
-         console.log(num++);
-         }
+    function countFiveNumbers(num) {
+        for (let i = 0; i < 5; i++) {
+            console.log(num++);
+        }
     }
+
     console.log(countFiveNumbers(5));
 
-//  Write a function that returns a number 7.
+    //  Write a function that returns a number 7.
 
-    function returnsNumber(num){
+    function returnsNumber(num) {
         return num;
     }
+
     console.log(returnsNumber(7));
 
-// write a js function that returns the total length of the string passed through it.
+    // write a js function that returns the total length of the string passed through it.
 
-    function totalString(str){
-    return str.length;
+    function totalString(str) {
+        return str.length;
     }
+
     console.log(totalString("Binju"));
-//Write a JavaScript function that returns the number of characters in a string passed through it.
 
-    function numberOfCharacter (str) {
-    return lengthOfString(str);
-}
-console.log(lengthOfString("Binju"));
+    //Write a JavaScript function that returns the number of characters in a string passed through it.
 
-//Write a JavaScript function that will return the diameter of a circle with a radius of the circle passed through it.
-//formula=diameter:2xr
-
-    function diameterOfCircle (radius){
-        return (2*radius);
+    function numberOfCharacter(str) {
+        return lengthOfString(str);
     }
-    console.log(diameterOfCircle (3));
 
-//Write a JavaScript function that returns the square root of the number passed through it.
+    console.log(lengthOfString("Binju"));
+
+    //Write a JavaScript function that will return the diameter of a circle with a radius of the circle passed through it.
+    //formula=diameter:2xr
+
+    function diameterOfCircle(radius) {
+        return (2 * radius);
+    }
+
+    console.log(diameterOfCircle(3));
+
+    //Write a JavaScript function that returns the square root of the number passed through it.
 
     function squareRootOfNumber(x) {
-    return Math.sqrt(x);
-}
+        return Math.sqrt(x);
+    }
 
-console.log(squareRootOfNumber(9));
+    console.log(squareRootOfNumber(9));
 
-//Write a JS function that returns the argument passed
-function returnArgument(x) {
-    return x;
-}
+    //Write a JS function that returns the argument passed
+    function returnArgument(x) {
+        return x;
+    }
 
-console.log(returnArgument(4));
+    console.log(returnArgument(4));
 
-//Write a JS function that returns a string representing the type of the argument passed through it.
-function typeOfInput(input) {
-    return typeof input;
-}
+    //Write a JS function that returns a string representing the type of the argument passed through it.
+    function typeOfInput(input) {
+        return typeof input;
+    }
 
-console.log(typeOfInput(34));
-console.log(typeOfInput("Binjita"));
+    console.log(typeOfInput(34));
+    console.log(typeOfInput("Binjita"));
 
-//Write a JavaScript function that returns the boolean true if a number passed through it is even.
-function isEven(num) {
-    return (num % 2 === 0);
-}
+    //Write a JavaScript function that returns the boolean true if a number passed through it is even.
+    function isEven(num) {
+        return (num % 2 === 0);
+    }
 
-console.log(isEven(8));
-console.log(isEven(9));
+    console.log(isEven(8));
+    console.log(isEven(9));
 
-//Print the first ten even numbers at least 3 times (preferably using different strategies)
+    //Print the first ten even numbers at least 3 times (preferably using different strategies)
     //let evenNumber = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24];
 
-    function printTenEvenNumber (num){
+    function printTenEvenNumber(num) {
         return num % 2 === 0;
 
     }
+
     console.log("2 ,4,6,8,10,12,14,16,18,20 ");
 
     //Alternate mwthod
 
     var num = 2;
     console.log(num);
-    num+=2;
+    num += 2;
 
 
-console.log(num);
-num += 2;
+    console.log(num);
+    num += 2;
 
-console.log(num);
-num += 2;
+    console.log(num);
+    num += 2;
 
-console.log(num);
-num += 2;
+    console.log(num);
+    num += 2;
 
-console.log(num);
-num += 2;
+    console.log(num);
+    num += 2;
 
-console.log(num);
-num += 2;
+    console.log(num);
+    num += 2;
 
-console.log(num);
-num += 2;
+    console.log(num);
+    num += 2;
 
-console.log(num);
-num += 2;
+    console.log(num);
+    num += 2;
 
-console.log(num);
-num += 2;
+    console.log(num);
+    num += 2;
 
-console.log(num);
-num += 2;
+    console.log(num);
+    num += 2;
 
-//Another way
+    //Another way
 
-for (var i = 1; i <= 20; i++) {
-    if (i % 2 ===0){
-        console.log(i)
+    for (var i = 1; i <= 20; i++) {
+        if (i % 2 === 0) {
+            console.log(i)
+        }
     }
-}
 
-// Write a function that takes 2 parameters. Starting at the first and counting by the second, will output 5 steps. I.e. countFromBy(10,5) results in:
-// 10
-// 15
-// 20
-// 25
-// 30
+    // Write a function that takes 2 parameters. Starting at the first and counting by the second, will output 5 steps. I.e. countFromBy(10,5) results in:
+    // 10
+    // 15
+    // 20
+    // 25
+    // 30
 
-    const countNumberByFive = function(num1, num2){
+    const countNumberByFive = function (num1, num2) {
         console.log(num1);
-        console.log(num1+ num2);
-        console.log(num1+ 2 * num2);
-        console.log(num1+ 3 * num2);
-        console.log(num1+ 4 * num2);
+        console.log(num1 + num2);
+        console.log(num1 + 2 * num2);
+        console.log(num1 + 3 * num2);
+        console.log(num1 + 4 * num2);
         // another way
         // console.log(num1);
         // num1 += num2;
@@ -166,11 +175,12 @@ for (var i = 1; i <= 20; i++) {
         // console.log(num1);
         // num1 += num2;
     }
-  console.log(countNumberByFive(2,2));
-//
-let luckyNumber = parseFloat(prompt("What is your lucky number 1-8 ?"));
-    function magic8Balls (luckyNumber) {
-        switch (luckyNumber){
+    console.log(countNumberByFive(2, 2));
+    //
+    let luckyNumber = parseFloat(prompt("What is your lucky number 1-8 ?"));
+
+    function magic8Balls(luckyNumber) {
+        switch (luckyNumber) {
             case 1:
                 return "AS i see it yes";
 
@@ -197,15 +207,16 @@ let luckyNumber = parseFloat(prompt("What is your lucky number 1-8 ?"));
 
         }
     }
-  alert(magic8Balls(luckyNumber));
+
+    alert(magic8Balls(luckyNumber));
     //
 
     let lights = "on";
-    let lightSwitch =  function () {
-        if( lights === "on" ){
+    let lightSwitch = function () {
+        if (lights === "on") {
             lights = "off";
-        }else {
-            lights ="on";
+        } else {
+            lights = "on";
         }
     }
     console.log("lights are " + lights);
@@ -213,7 +224,7 @@ let luckyNumber = parseFloat(prompt("What is your lucky number 1-8 ?"));
     console.log("lights are now " + lights);
 
 
-    for(let monkeys =9; monkeys >0; monkeys--){
+    for (let monkeys = 9; monkeys > 0; monkeys--) {
         console.log(monkeys + " little monkeys jumping on the bed ");
     }
 
@@ -222,185 +233,192 @@ let luckyNumber = parseFloat(prompt("What is your lucky number 1-8 ?"));
     //2 is even
     //3 ...
 
-let countTo10 = function () {
-    for (let i=1; i<=10 ; i++){
-        if(i%2===0){
-            console.log(i + " is even number");
-        }else {
-            console.log(i+ " is odd number");
+    let countTo10 = function () {
+        for (let i = 1; i <= 10; i++) {
+            if (i % 2 === 0) {
+                console.log(i + " is even number");
+            } else {
+                console.log(i + " is odd number");
+            }
         }
     }
-}
-countTo10();
+    countTo10();
 
-// Given a string, you have to return a string in which each character (case-sensitive) is repeated once.
-// doubleChar("String") ==> "SSttrriinngg"
-// doubleChar("Hello World") ==> "HHeelllloo  WWoorrlldd"
-// doubleChar("1234!_ ") ==> "11223344!!__  "
+    // Given a string, you have to return a string in which each character (case-sensitive) is repeated once.
+    // doubleChar("String") ==> "SSttrriinngg"
+    // doubleChar("Hello World") ==> "HHeelllloo  WWoorrlldd"
+    // doubleChar("1234!_ ") ==> "11223344!!__  "
 
- function doubleChar(str){
-     let newString = "";
-     for(let i=0; i<str.length;i++){
-        newString += str[i] + str[i];
-        console.log(newString);
-     }
-     return newString;
- }
-console.log(doubleChar("Binjita"));
+    function doubleChar(str) {
+        let newString = "";
+        for (let i = 0; i < str.length; i++) {
+            newString += str[i] + str[i];
+            console.log(newString);
+        }
+        return newString;
+    }
 
- // fizzbuzz exercises
-function fizzBuzz(num){
-    for(let i=1; i <= num; i++) {
-        //if div by both, fizzBuzz
+    console.log(doubleChar("Binjita"));
 
-        if (i % 3 === 0 && i % 5 === 0) {
-            console.log("Fizzbuzz");
+    // fizzbuzz exercises
+    function fizzBuzz(num) {
+        for (let i = 1; i <= num; i++) {
+            //if div by both, fizzBuzz
 
-        }else if (i % 3 === 0) {
-            console.log("fizz");
+            if (i % 3 === 0 && i % 5 === 0) {
+                console.log("Fizzbuzz");
 
-        } else if (i % 5 === 0) {
-            console.log("Buzz");
+            } else if (i % 3 === 0) {
+                console.log("fizz");
 
-            //if div by non, numbers
+            } else if (i % 5 === 0) {
+                console.log("Buzz");
+
+                //if div by non, numbers
+            } else {
+                console.log(i);
+            }
+        }
+    }
+
+    fizzBuzz(31);
+
+    //
+    let fibonacci = function (num) {
+        let output = [0, 1];
+        let i = output.length;
+        while (i < num) {
+            output.push(output[output.length - 2] + output[output.length - 1]);
+            i++;
+        }
+        return output;
+    }
+
+    //Write a function that will return an array passed sorted in reverse alphabetical order, when passed an array of strings.
+    // It should return null if any element within the array is not a string.
+    function arraySorted(str) {
+        var newArray = [];
+        for (var i = 0; i < str.length; i++) {
+            if (typeof str[i] !== "string") {
+                return null;
+            }
+
+        }
+        return str.sort().reverse();
+    }
+
+    console.log(arraySorted(["string", "bin", "cat", "dog"]));
+    console.log(arraySorted([0]));
+
+    //Write a JavaScript function that takes in two arguments, and returns whether the first argument is even divisible by
+    // the second argument, or not. Non-number arguments should have the function return null.
+
+    function isDivisible(x, y) {
+        if (typeof x === "number" && typeof y === "number") {
+            return x % y === 0;
         } else {
-            console.log(i);
+            return null;
         }
     }
-}
-fizzBuzz(31);
 
-//
-let fibonacci = function(num) {
-    let output = [0,1];
-    let i = output.length;
-    while (i<num) {
-        output.push(output[output.length - 2] + output[output.length - 1]);
-        i++;
-    }
-    return output;
-}
+    console.log(isDivisible(4, 2));
+    console.log(isDivisible("string", 3));
 
-//Write a function that will return an array passed sorted in reverse alphabetical order, when passed an array of strings.
-// It should return null if any element within the array is not a string.
-function arraySorted (str) {
-    var newArray= [];
-    for(var i=0; i<str.length;i++){
-        if(typeof str[i] !==  "string"){
-            return  null;
+    //Write a JavaScript function that takes in a length in inches (a number), and converts it to a string listing the length
+    // in feet and inches. (Example: 78 => 6’6”). Non-number arguments should have the function return null.
+
+    function lengthInInches(num) {
+        if (typeof (num) === "number") {
+            return Math.floor(num / 12) + "'" + (num % 12) + "\"";
         }
-
-    }
-    return str.sort().reverse();
-}
-console.log(arraySorted(["string", "bin","cat","dog"]));
-console.log(arraySorted([0]));
-
-//Write a JavaScript function that takes in two arguments, and returns whether the first argument is even divisible by
-// the second argument, or not. Non-number arguments should have the function return null.
-
-    function isDivisible (x,y){
-    if(typeof x === "number" && typeof y === "number"){
-       return x % y === 0;
-    }else {
         return null;
     }
-    }
-    console.log(isDivisible( 4,2));
-    console.log(isDivisible( "string", 3));
 
-//Write a JavaScript function that takes in a length in inches (a number), and converts it to a string listing the length
-// in feet and inches. (Example: 78 => 6’6”). Non-number arguments should have the function return null.
+    console.log(lengthInInches(87));
+    console.log(lengthInInches(90));
+    console.log(lengthInInches("Binjita"));
 
-function lengthInInches(num){
-    if(typeof (num) === "number"){
-        return Math.floor(num/ 12) + "'" + (num%12)+ "\"";
-    }return null;
-}
-console.log(lengthInInches(87));
-console.log(lengthInInches(90));
-console.log(lengthInInches("Binjita"));
-
-//Write a function that takes in a string and returns the number of words in the string. Non-string inputs should return null.
-    function stringToNumber(str){
-        for(var i=0;i<str.length;i++){
-            if(typeof str === "string"){
+    //Write a function that takes in a string and returns the number of words in the string. Non-string inputs should return null.
+    function stringToNumber(str) {
+        for (var i = 0; i < str.length; i++) {
+            if (typeof str === "string") {
                 return str.split(" ").length;
             }
             return null;
         }
 
     }
+
     console.log(stringToNumber("Binjita"));
     console.log(stringToNumber(784));
 
-//use reduce method to get the highest height from the following object
-var hamsters = [
-{
-    name: "Hamtaro",
-        heightInMM: 86,
-    fur: ['orange', 'white'],
-    gender: "male",
-    dateOfBirth: "August 6"
-} , {
-    name: "Bijou",
-        heightInMM: 75,
-        fur: ['white'],
-        gender: "female",
-        dateOfBirth: "July 10"
-} , {
-    name: "Oxnard",
-        heightInMM: 100,
-        fur: ['grey', 'white'],
-        gender: "male",
-        dateOfBirth: "May 3"
-} , {
-    name: "Boss",
-        heightInMM: 120,
-        fur: ['brown', 'white'],
-        gender: "male",
-        dateOfBirth: "Spetember 21"
-} , {
-    name: "Snoozer",
-        heightInMM: 85,
-        fur: ['brown', 'white', "pink"],
-        gender: "male",
-        dateOfBirth: "January 14"
-}
-];
-
-let tallestHam = hamsters.reduce((tallHamster, hamham) => {
-  if(hamham.heightInMM > tallHamster.heightInMM){
-      return hamham;
-  }else {
-      return tallHamster;
-  }
-}, {heightInMM: 0});
-console.log(tallestHam);
-
-//Write a function that returns “fizz”, “buzz”, or “fizzbuzz” based on the conditions of the famous FizzBuzz exercise.
-// Any number that doesn’t match these conditions should return the number passed. Any non-number passed should have
-// the function return null.
-
-function fizbuz (num){
-    for (let i=1; i <= num; i++) {
-        if(typeof num !== "number"){
-            return null;
-        } if (i % 3 === 0 && i % 5 === 0) {
-            console.log("Fizzbuzz");
+    //use reduce method to get the highest height from the following object
+    var hamsters = [
+        {
+            name: "Hamtaro",
+            heightInMM: 86,
+            fur: ['orange', 'white'],
+            gender: "male",
+            dateOfBirth: "August 6"
+        }, {
+            name: "Bijou",
+            heightInMM: 75,
+            fur: ['white'],
+            gender: "female",
+            dateOfBirth: "July 10"
+        }, {
+            name: "Oxnard",
+            heightInMM: 100,
+            fur: ['grey', 'white'],
+            gender: "male",
+            dateOfBirth: "May 3"
+        }, {
+            name: "Boss",
+            heightInMM: 120,
+            fur: ['brown', 'white'],
+            gender: "male",
+            dateOfBirth: "Spetember 21"
+        }, {
+            name: "Snoozer",
+            heightInMM: 85,
+            fur: ['brown', 'white', "pink"],
+            gender: "male",
+            dateOfBirth: "January 14"
         }
-        if (i % 3 === 0) {
-            console.log("fizz");
+    ];
+
+    let tallestHam = hamsters.reduce((tallHamster, hamham) => {
+        if (hamham.heightInMM > tallHamster.heightInMM) {
+            return hamham;
+        } else {
+            return tallHamster;
         }
-        else if (i % 5 === 0) {
-            console.log("Buzz");
-        }
-        else {
-            console.log(i);
+    }, {heightInMM: 0});
+    console.log(tallestHam);
+
+    //Write a function that returns “fizz”, “buzz”, or “fizzbuzz” based on the conditions of the famous FizzBuzz exercise.
+    // Any number that doesn’t match these conditions should return the number passed. Any non-number passed should have
+    // the function return null.
+
+    function fizbuz(num) {
+        for (let i = 1; i <= num; i++) {
+            if (typeof num !== "number") {
+                return null;
+            }
+            if (i % 3 === 0 && i % 5 === 0) {
+                console.log("Fizzbuzz");
+            }
+            if (i % 3 === 0) {
+                console.log("fizz");
+            } else if (i % 5 === 0) {
+                console.log("Buzz");
+            } else {
+                console.log(i);
+            }
         }
     }
-}
-console.log(fizbuz("3"));
+
+    console.log(fizbuz("3"));
 
 </script>
 </body>

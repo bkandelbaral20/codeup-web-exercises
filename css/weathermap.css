@@ -11,14 +11,19 @@ body {
     height: 25em;
     width: 100%;
 }
-
-h1, p {
+.search{
+    margin-bottom: 3em;
+    margin-left:35% ;
+    width: 30%;
+}
+h2, H5 {
     color: navajowhite;
 }
+
 .card {
     font-size: .7em !important;
 }
 #card {
-        height: 4em;
+        height: 2em;
     }
 

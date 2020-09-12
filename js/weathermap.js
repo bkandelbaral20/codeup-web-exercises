@@ -120,14 +120,7 @@ $(document).ready(function () {
 
         });
 
-        //_____Jquery Effects
-        $('.nav-link').hover(
-            function () {
-                $(this).css('background-color', 'skyblue');
-            },
-            function () {
-                $(this).css('background-color', '#FFF');
-            });
+
     });
 
 

@@ -71,3 +71,15 @@ if(index === arr.length -1 ){
 }
 }, "Your instructor are : ");
 console.log(string);
+
+//Bonus
+//Use .reduce to get the unique list of languages from the list of users.
+
+const listOfNames = users.map(({name}) => name);
+console.log(listOfNames);
+const listOfLanguages = users.map(({languages}) => languages.flat());//flat will combine all the
+// different array into one array
+console.log(listOfLanguages);
+
+// const uniqueListOflanguages = listOfLanguages.filter((val, i)
+//     => listOfLanguages.indexOf(val) === i);
